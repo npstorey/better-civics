@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETTER CIVICS NYC - Enhancing Civic Engagement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>BETTER CIVICS NYC</h1>
+            <nav>
+                <ul>
+                    <li><a href="#now">NOW</a></li>
+                    <li><a href="#tomorrow">TOMORROW</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="tagline-container section-padding">
+        <div class="container">
+            <p class="tagline fade-in">Your Guide to Civic Engagement: Today's Processes, Tomorrow's Possibilities</p>
+            <button class="cta hover-lift">Join us to make a Better Civics</button>
+        </div>
+    </div>
+
+    <main class="container">
+        <section id="now" class="full-width-section section-padding">
+            <h2 class="section-title">Learn about the current state of civic engagement in NYC</h2>
+            <div class="grid grid-3-col">
+                <div class="subsection fade-in">
+                    <h3>NYC Charter Mandated Processes</h3>
+                    <div class="charter-processes">
+                        <table id="civic-processes-table">
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>Process</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="subsection fade-in">
+                    <h3>Profile: Civic Engagement Commission</h3>
+                    <div class="commission-box">
+                        <p>Established in 2018 to enhance civic participation and promote civic trust</p>
+                        <a href="https://www1.nyc.gov/site/civicengagement/index.page" target="_blank" rel="noopener noreferrer" class="hover-lift">Learn More</a>
+                    </div>
+                </div>
+                <div class="subsection fade-in">
+                    <h3>Documenting the ULURP Process</h3>
+                    <div id="ulurp-graphic">
+                        <!-- ULURP process graphic will be added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tomorrow" class="full-width-section section-padding">
+            <h2 class="section-title">Dream about... the future state of civic engagement in NYC</h2>
+            <div class="grid grid-2-col">
+                <div class="panel fade-in hover-lift">
+                    <h4>Sortition</h4>
+                    <div class="video-placeholder">
+                        <img src="https://via.placeholder.com/300x200.png?text=Sortition" alt="Sortition concept">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <p>Explore the potential of random selection in civic decision-making</p>
+                </div>
+                <div class="panel fade-in hover-lift">
+                    <h4>Expand Participatory Budgeting</h4>
+                    <div class="video-placeholder">
+                        <img src="https://via.placeholder.com/300x200.png?text=Participatory+Budgeting" alt="Participatory Budgeting concept">
+                        <button class="play-button">▶</button>
+                    </div>
+                    <p>See how expanded participatory budgeting could transform civic engagement</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-involved" class="full-width-section section-padding">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="grid grid-2-col">
+                <div class="subsection fade-in">
+                    <h3>Get Involved in Current Processes</h3>
+                    <div class="grid grid-3-col">
+                        <div class="option hover-lift">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4>Attend a Meeting</h4>
+                            <p>Join your local community board meeting</p>
+                            <a href="https://www1.nyc.gov/site/cau/community-boards/community-boards.page" target="_blank" rel="noopener noreferrer">Find Your Board</a>
+                        </div>
+                        <div class="option hover-lift">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h4>Participatory Budgeting</h4>
+                            <p>Vote on local projects in your district</p>
+                            <a href="https://council.nyc.gov/pb/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                        </div>
+                        <div class="option hover-lift">
+                            <i class="fas fa-users"></i>
+                            <h4>Volunteer</h4>
+                            <p>Support local initiatives and organizations</p>
+                            <a href="https://www.nycservice.org/" target="_blank" rel="noopener noreferrer">Find Opportunities</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subsection fade-in">
+                    <h3>Dream up a Better Civics</h3>
+                    <div class="grid grid-2-col">
+                        <div class="option hover-lift">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Submit an Idea</h4>
+                            <p>Share your vision for a better civic engagement process</p>
+                            <a href="#" class="submit-idea">Submit Your Idea</a>
+                        </div>
+                        <div class="option hover-lift">
+                            <i class="fas fa-comments"></i>
+                            <h4>Join the Discussion</h4>
+                            <p>Participate in forums about improving civic processes</p>
+                            <a href="#" class="join-discussion">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h4>Contact Us</h4>
+                <p>Email: info@bettercivicsnyc.org</p>
+                <p>Phone: (212) 555-CIVIC</p>
+            </div>
+            <div class="column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 BETTER CIVICS NYC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+/* General styles */
+:root {
+    --primary-color: #1a5f7a;
+    --secondary-color: #57c5b6;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --accent-color: #ffc107;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+.tagline {
+    font-style: italic;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+}
+
+.process-columns, .ulurp-boxes, .specific-ulurp-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.process, .ulurp-box {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    flex-basis: 30%;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.process:hover, .ulurp-box:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.commission-box {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.comic-panels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    flex-basis: 48%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.video-placeholder {
+    position: relative;
+}
+
+.video-placeholder img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.play-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    left: 50%;
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: var(--accent-color);
+}
+
+.full-width {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.involvement-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.option {
+    background-color: white;
+    border-radius: 5px;
+    color: var(--text-color);
+    flex-basis: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content .column {
+    flex-basis: 30%;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    width: 70%;
+}
+
+.newsletter-form button {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main, .involvement-options {
+        flex-direction: column;
+    }
+
+    .column, .option {
+        flex-basis: 100%;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+}
+
+/* Add these styles to the existing styles.css file */
+.charter-processes {
+    margin-top: 2rem;
+}
+
+#civic-processes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#civic-processes-table th,
+#civic-processes-table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#civic-processes-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#civic-processes-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    margin: 0 1rem;
+}
+
+/* Add these new styles and modify existing ones as needed */
+
+.tagline-container {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.full-width-section {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#ulurp-graphic {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    background-color: #f0f0f0; /* Placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Modify the main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Update responsive design */
+@media (max-width: 768px) {
+    .comic-panels {
+        flex-direction: column;
+    }
+
+    .panel {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Add more whitespace and improve grid system */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Add subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Improve spacing and readability */
+h2, h3, h4 {
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Enhance visual hierarchy */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Improve responsiveness */
+@media (max-width: 768px) {
+    .grid-2-col, .grid-3-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.subsection {
+    margin-bottom: 2rem;
+}
+
+.subsection h3 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid-3-col {
+        grid-template-columns: 1fr;
+    }
+}
